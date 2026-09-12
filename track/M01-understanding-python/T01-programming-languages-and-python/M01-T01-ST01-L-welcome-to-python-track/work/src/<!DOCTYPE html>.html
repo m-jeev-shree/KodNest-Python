@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html, body {
+    width: 210mm;
+    height: 297mm;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #222;
+    background-color: #fff;
+  }
+  .page {
+    width: 210mm;
+    height: 297mm;
+    padding: 12mm 15mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  
+  /* Header */
+  header {
+    border-bottom: 2px solid #333;
+    padding-bottom: 6px;
+    margin-bottom: 8px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #111;
+  }
+  .contact-info {
+    margin-top: 3px;
+    font-size: 15px;
+    color: #444;
+  }
+  .contact-info span:not(:last-child)::after {
+    content: " | ";
+    color: #888;
+  }
+
+  /* Section Styling */
+  section {
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2px;
+    margin-bottom: 4px;
+    color: #111;
+  }
+
+  /* Compact Paragraphs & Lists */
+  p, li {
+    font-size: 16px;
+    text-align: justify;
+  }
+  ul {
+    list-style-type: disc;
+    padding-left: 18px;
+  }
+  li {
+    margin-bottom: 2px;
+  }
+
+  /* Subheadings / Roles */
+  .item-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+  .item-sub {
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 2px;
+  }
+
+  /* Grid Layouts for Space Optimization */
+  .grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .grid-3col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+  }
+
+  /* Inline Lists */
+  .inline-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+  }
+  .inline-list span {
+    background: #f0f0f0;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 15px;
+  }
+
+  .edu-card, .cert-card {
+    margin-bottom: 3px;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <!-- HEADER -->
+  <header>
+    <h1>M Jeevitha Shree</h1>
+    <div class="contact-info">
+      <span>Bengaluru (Bangalore) Rural</span>
+      <span>mjeevithashree0029@gmail.com</span>
+      <span>+91 9108419172</span>
+    </div>
+  </header>
+
+  <!-- SUMMARY -->
+  <section>
+    <div class="section-title">Summary</div>
+    <p>Enthusiastic and detail-oriented graduate seeking an entry-level Frontend Developer position. Committed to leveraging foundational web development knowledge, adapting to new technologies, and collaborating with cross-functional teams to build quality, innovative, and engaging user experiences.</p>
+  </section>
+
+  <!-- SKILLS & LANGUAGES -->
+  <section class="grid-2col">
+    <div>
+      <div class="section-title">Skills</div>
+      <div class="inline-list">
+        <span>Python</span><span>Docker</span><span>GitHub</span><span>Linux & Windows</span><span>Cloud Computing</span><span>CI/CD DevOps</span><span>Grafana</span>
+      </div>
+    </div>
+    <div>
+      <div class="section-title">Languages</div>
+      <p style="font-size: 15px; margin-top: 2px;">English (Fluent), Tamil (Fluent), Kannada (Fluent), Hindi (Fluent)</p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section>
+    <div class="section-title">Professional Experience</div>
+    <div class="item-header">
+      <span>Shiktra Technologies LLP</span>
+      <span>Bengaluru, Karnataka, India</span>
+    </div>
+    <div class="item-sub">
+      <span>Data Analytics Intern</span>
+      <span>06 Oct 2025 – 17 Apr 2026</span>
+    </div>
+    <ul>
+      <li>Collected, cleaned, and preprocessed structured data using Python, Pandas, and NumPy to ensure high analytical accuracy.</li>
+      <li>Conducted exploratory data analysis (EDA) and created visualizations to communicate findings and drive business decisions.</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <div class="section-title">Project Experience</div>
+    
+    <div style="margin-bottom: 4px;">
+      <strong>Pomegranate Disease Detection</strong>
+      <p>Implemented a YOLOv8m model achieving 98% accuracy. Optimized performance via rotation/color jitter data augmentation, transfer learning, and real-time OpenCV deployment for fast, reliable disease identification.</p>
+    </div>
+
+    <div style="margin-bottom: 4px;">
+      <strong>Ocular Cancer Detection System</strong>
+      <p>Trained a CNN using Keras & TensorFlow with 95% accuracy. Preprocessed medical images via OpenCV/NumPy and evaluated performance using ROC-AUC curves and confusion matrices.</p>
+    </div>
+
+    <div style="margin-bottom: 4px;">
+      <strong>Smart Attendance Tracking System Using AI</strong>
+      <p>Built a React, TypeScript, and Supabase platform capturing attendance via automated ID card scanning, computer vision, and OCR techniques with real-time analytics.</p>
+    </div>
+
+    <div>
+      <strong>Personalised Online Meeting System for AICTE</strong>
+      <p>Developed a secure full-stack platform integrating RBAC and Blockchain for decentralized authentication, tamper-proof attendance logging, and real-time collaboration.</p>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section>
+    <div class="section-title">Education</div>
+    <div class="grid-3col">
+      <div class="edu-card">
+        <strong>Undergraduate (B.E.)</strong><br>
+        <span style="font-size: 14px;">Presidency University</span><br>
+        <span style="font-size: 14px;">Passout: 2026 | CGPA: 7.79</span>
+      </div>
+      <div class="edu-card">
+        <strong>12th Grade</strong><br>
+        <span style="font-size: 14px;">Narayana PU College</span><br>
+        <span style="font-size: 14px;">Passout: 2022 | 79.83%</span>
+      </div>
+      <div class="edu-card">
+        <strong>10th Grade</strong><br>
+        <span style="font-size: 14px;">Spurthy Global School</span><br>
+        <span style="font-size: 14px;">Passout: 2020 | 70.83%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS & CERTIFICATIONS -->
+  <section>
+    <div class="section-title">Certifications</div>
+    <div class="grid-3col" style="font-size: 14px;">
+      <div><strong>DSA using JAVA</strong><br>CodeChef (15 Dec 2023)</div>
+      <div><strong>Web Dev Masterclass</strong><br>Udemy (25 Nov 2024)</div>
+      <div><strong>Python Pro Bootcamp</strong><br>Udemy (30 Mar 2026)</div>
+    </div>
+  </section>
+</div>
+
+</body>
+</html>
