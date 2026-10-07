@@ -1,5 +1,5 @@
-#selection statements
-age = int(input("Enter your age: "))
+'''#selection statements
+age = int(input())
 if age >= 18:
     print("You are eligible to vote.")
 else:
@@ -58,3 +58,52 @@ match month:
         print("Spring season.")
     case _:
         print("Invalid month.")
+
+# for loops 
+for i in range(1, 6):
+    print(i) # Output: 1 2 3 4 5
+
+for i in range(1,5):
+    print(i) # Output: 1 2 3 4
+
+for i in range(1,11):
+    if i % 2 == 0:
+        print(i) # Output: 2 4 6 8 10
+
+i = 0
+while i <= 4:
+    print(i) # Output: 0 1 2 3 4
+    i += 1
+
+#jump statements
+for i in range(1, 11):
+    if i == 5:
+        break
+    print(i) # Output: 1 2 3 4
+
+for i in range(1, 11):
+    if i == 5:
+        continue
+    print(i) # Output: 1 2 3 4 6 7 8 9 10
+
+for i in range(1, 11):
+    if i == 5:
+        pass
+    else:
+        print(i) # Output: 1 2 3 4 6 7 8 9 10
+
+def add():
+    pass
+
+def square(n):
+    return n * n
+print(square(5)) ''' # Output: 25
+
+# sum of n natural numbers using while loop
+n = int(input())
+sum = 0
+for i in range(1, n+1):
+    sum = sum + i
+    print(sum)
+
+    

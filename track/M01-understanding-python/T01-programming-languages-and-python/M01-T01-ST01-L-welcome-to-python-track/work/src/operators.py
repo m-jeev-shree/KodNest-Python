@@ -29,8 +29,8 @@ print(result) # Output: odd, because 5 is not divisible by 2
 a = 998
 b = 206
 c = 57
-largest = a if (a > b and a > c) else (b if b > c and b > a else c)
-print("The largest number is:", largest) # Output: The largest number is: 20
+largest = a if (a > b and a > c) else b if (b > c and b > a) else c
+print("The largest number is:", largest) # Output: The largest number is: 998
 
 #wap to find if the number is positive, negative  using ternary operator
 num =-505
