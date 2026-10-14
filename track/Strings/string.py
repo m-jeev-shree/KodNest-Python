@@ -17,3 +17,9 @@ print(str4)
 
 str5 = "My name is \"John\" I am from \"USA\""
 print(str5)
+
+a = "Hello"
+b = "World"
+#concatenation
+c = a + " " + b
+print(c)

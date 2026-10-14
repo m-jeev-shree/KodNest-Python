@@ -56,3 +56,28 @@ s1 = "Hello"
 s2 = "World"
 print(id(s1), id(s2))
 print(id(s2), id(s1))
+
+text = "python programming"
+print(text[0:3])
+
+text = "python programming"
+print(text[0:6]) # Output: python
+
+text = "developer"
+print(text[2:5]) # Output: vel
+
+text = "computer"
+print(text[4:7]) # Output: ompute
+
+text = "artificial intelligence"
+print(text[11:]) # Output: intelligence
+
+text = "kodnest"
+print(text[:4]) # Output: kodn
+
+text = "machine learning"
+print(text[6:]) # Output: learning
+
+text = "data science"
+print(text[:9]) # Output: data science
+

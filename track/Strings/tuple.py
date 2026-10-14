@@ -39,4 +39,22 @@ age[1] = 25
 print(age)  # Output: [10, 25, 30] #changing the value of the second element in the list to 25
 
 #tuple packing and unpacking
-fruits = tuple(["apple", "banana", "cherry"])
+fruits = tuple(["apple", "banana", "cherry"]) #tuples to variable
+(f1, f2, f3) = fruits #unpacking the tuple into variables
+print(f1)  # Output: apple
+print(f2)  # Output: banana
+print(f3)  # Output: cherry
+
+#packing
+a = 10
+b = 20
+c = 30
+my_tuple = (a, b, c) #packing the variables into a tuple
+print(my_tuple)  # Output: (10, 20, 30)
+
+# extend , add , insert, remove, pop, clear, del are not allowed in tuple as it is immutable
+
+a = (1, 2, 3)
+b = (4, 5, 6)
+c = a + b #concatenation of tuples
+print(c)  # Output: (1, 2, 3, 4, 5, 6
